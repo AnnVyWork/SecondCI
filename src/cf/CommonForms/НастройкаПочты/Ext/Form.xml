@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
 	<WindowOpeningMode>LockWholeInterface</WindowOpeningMode>
+	<Group>Vertical</Group>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<ChildItems>
 		<InputField name="ИмяОтправителя" id="54">
@@ -26,6 +27,8 @@
 							<v8:content>Группа настройка SMTPСервера</v8:content>
 						</v8:item>
 					</ToolTip>
+					<Group>Vertical</Group>
+					<ScrollOnCompress>false</ScrollOnCompress>
 					<ExtendedTooltip name="ГруппаНастройкаSMTPСервераExtendedTooltip" id="90"/>
 					<ChildItems>
 						<InputField name="АдресSMTPСервера" id="58">
@@ -59,7 +62,6 @@
 									<v8:content>SSL</v8:content>
 								</v8:item>
 							</Title>
-							<CheckBoxType>Auto</CheckBoxType>
 							<ContextMenu name="SMTPSSLКонтекстноеМеню" id="110"/>
 							<ExtendedTooltip name="SMTPSSLРасширеннаяПодсказка" id="111"/>
 						</CheckBoxField>
@@ -81,7 +83,6 @@
 									<v8:content>Защищенная аутентификация</v8:content>
 								</v8:item>
 							</Title>
-							<CheckBoxType>Auto</CheckBoxType>
 							<ContextMenu name="ТолькоЗащищеннаяАутентификацияSMTPКонтекстноеМеню" id="116"/>
 							<ExtendedTooltip name="ТолькоЗащищеннаяАутентификацияSMTPРасширеннаяПодсказка" id="117"/>
 						</CheckBoxField>
@@ -100,6 +101,8 @@
 							<v8:content>Группа настройка POP3 сервера</v8:content>
 						</v8:item>
 					</ToolTip>
+					<Group>Vertical</Group>
+					<ScrollOnCompress>false</ScrollOnCompress>
 					<ExtendedTooltip name="ГруппаНастройкаPOP3СервераExtendedTooltip" id="96"/>
 					<ChildItems>
 						<InputField name="АдресPOP3Сервера" id="68">
@@ -127,7 +130,6 @@
 									<v8:content>SSL</v8:content>
 								</v8:item>
 							</Title>
-							<CheckBoxType>Auto</CheckBoxType>
 							<ContextMenu name="POP3SSLКонтекстноеМеню" id="113"/>
 							<ExtendedTooltip name="POP3SSLРасширеннаяПодсказка" id="114"/>
 						</CheckBoxField>
@@ -149,7 +151,6 @@
 									<v8:content>Защищенная аутентификация</v8:content>
 								</v8:item>
 							</Title>
-							<CheckBoxType>Auto</CheckBoxType>
 							<ContextMenu name="ТолькоЗащищеннаяАутентификацияPOP3КонтекстноеМеню" id="119"/>
 							<ExtendedTooltip name="ТолькоЗащищеннаяАутентификацияPOP3РасширеннаяПодсказка" id="120"/>
 						</CheckBoxField>
@@ -168,6 +169,8 @@
 							<v8:content>Группа настройка IMAPСервера</v8:content>
 						</v8:item>
 					</ToolTip>
+					<Group>Vertical</Group>
+					<ScrollOnCompress>false</ScrollOnCompress>
 					<ExtendedTooltip name="ГруппаНастройкаIMAPСервераExtendedTooltip" id="101"/>
 					<ChildItems>
 						<InputField name="АдресIMAPСервера" id="81">
@@ -195,7 +198,6 @@
 									<v8:content>SSL</v8:content>
 								</v8:item>
 							</Title>
-							<CheckBoxType>Auto</CheckBoxType>
 							<ContextMenu name="IMAPSSLКонтекстноеМеню" id="86"/>
 							<ExtendedTooltip name="IMAPSSLExtendedTooltip" id="106"/>
 						</CheckBoxField>
@@ -217,7 +219,6 @@
 									<v8:content>Защищенная аутентификация</v8:content>
 								</v8:item>
 							</Title>
-							<CheckBoxType>Auto</CheckBoxType>
 							<ContextMenu name="ТолькоЗащищеннаяАутентификацияIMAPКонтекстноеМеню" id="122"/>
 							<ExtendedTooltip name="ТолькоЗащищеннаяАутентификацияIMAPРасширеннаяПодсказка" id="123"/>
 						</CheckBoxField>
@@ -227,7 +228,6 @@
 		</Pages>
 		<CheckBoxField name="ИспользоватьIMAP" id="87">
 			<DataPath>Объект.ИспользоватьIMAP</DataPath>
-			<CheckBoxType>Auto</CheckBoxType>
 			<ContextMenu name="ИспользоватьIMAPКонтекстноеМеню" id="88"/>
 			<ExtendedTooltip name="ИспользоватьIMAPExtendedTooltip" id="107"/>
 		</CheckBoxField>

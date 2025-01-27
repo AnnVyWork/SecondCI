@@ -1,5 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>DontBlock</WindowOpeningMode>
+	<Group>Vertical</Group>
 	<AutoTime>CurrentOrLast</AutoTime>
 	<UsePostingMode>Auto</UsePostingMode>
 	<RepostOnWrite>true</RepostOnWrite>
@@ -55,6 +57,8 @@
 							<v8:content>Товарные запасы</v8:content>
 						</v8:item>
 					</Title>
+					<Group>Vertical</Group>
+					<ScrollOnCompress>false</ScrollOnCompress>
 					<ExtendedTooltip name="ГруппаТоварныеЗапасыExtendedTooltip" id="35"/>
 					<ChildItems>
 						<Table name="ТоварныеЗапасы" id="4">
@@ -62,7 +66,7 @@
 							<Width>80</Width>
 							<HeightInTableRows>13</HeightInTableRows>
 							<SelectionMode>SingleRow</SelectionMode>
-							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<RowSelectionMode>Cell</RowSelectionMode>
 							<AutoInsertNewRow>true</AutoInsertNewRow>
 							<AutoAddIncomplete>true</AutoAddIncomplete>
 							<AutoMarkIncomplete>true</AutoMarkIncomplete>
@@ -112,6 +116,7 @@
 									<DataPath>Объект.RegisterRecords.ТоварныеЗапасы.LineNumber</DataPath>
 									<EditMode>EnterOnInput</EditMode>
 									<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+									<AutoEditMode>true</AutoEditMode>
 									<ContextMenu name="ТоварныеЗапасыНомерСтрокиКонтекстноеМеню" id="19"/>
 									<ExtendedTooltip name="ТоварныеЗапасыНомерСтрокиExtendedTooltip" id="38"/>
 								</LabelField>
@@ -119,6 +124,7 @@
 									<DataPath>Объект.RegisterRecords.ТоварныеЗапасы.RecordType</DataPath>
 									<EditMode>EnterOnInput</EditMode>
 									<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+									<AutoEditMode>true</AutoEditMode>
 									<Width>5</Width>
 									<Wrap>false</Wrap>
 									<BorderColor>style:BorderColor</BorderColor>
@@ -130,7 +136,7 @@
 									<ReadOnly>true</ReadOnly>
 									<EditMode>EnterOnInput</EditMode>
 									<FooterHorizontalAlign>Left</FooterHorizontalAlign>
-									<CheckBoxType>Auto</CheckBoxType>
+									<AutoEditMode>true</AutoEditMode>
 									<ContextMenu name="ТоварныеЗапасыАктивностьКонтекстноеМеню" id="21"/>
 									<ExtendedTooltip name="ТоварныеЗапасыАктивностьExtendedTooltip" id="40"/>
 								</CheckBoxField>
@@ -138,6 +144,7 @@
 									<DataPath>Объект.RegisterRecords.ТоварныеЗапасы.Товар</DataPath>
 									<EditMode>EnterOnInput</EditMode>
 									<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+									<AutoEditMode>true</AutoEditMode>
 									<Wrap>false</Wrap>
 									<ContextMenu name="ТоварныеЗапасыТоварКонтекстноеМеню" id="22"/>
 									<ExtendedTooltip name="ТоварныеЗапасыТоварExtendedTooltip" id="41"/>
@@ -146,6 +153,7 @@
 									<DataPath>Объект.RegisterRecords.ТоварныеЗапасы.Склад</DataPath>
 									<EditMode>EnterOnInput</EditMode>
 									<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+									<AutoEditMode>true</AutoEditMode>
 									<Wrap>false</Wrap>
 									<ContextMenu name="ТоварныеЗапасыСкладКонтекстноеМеню" id="23"/>
 									<ExtendedTooltip name="ТоварныеЗапасыСкладExtendedTooltip" id="42"/>
@@ -154,6 +162,7 @@
 									<DataPath>Объект.RegisterRecords.ТоварныеЗапасы.Количество</DataPath>
 									<EditMode>EnterOnInput</EditMode>
 									<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+									<AutoEditMode>true</AutoEditMode>
 									<Wrap>false</Wrap>
 									<SpinButton>true</SpinButton>
 									<ContextMenu name="ТоварныеЗапасыКоличествоКонтекстноеМеню" id="24"/>

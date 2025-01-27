@@ -1,5 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>DontBlock</WindowOpeningMode>
+	<Group>Vertical</Group>
 	<AutoTime>CurrentOrLast</AutoTime>
 	<UsePostingMode>Auto</UsePostingMode>
 	<RepostOnWrite>true</RepostOnWrite>
@@ -162,7 +164,9 @@
 							<v8:content>Товары</v8:content>
 						</v8:item>
 					</Title>
+					<Group>Vertical</Group>
 					<TitleDataPath>Объект.Товары.RowsCount</TitleDataPath>
+					<ScrollOnCompress>false</ScrollOnCompress>
 					<ExtendedTooltip name="ГруппаТоварыExtendedTooltip" id="65"/>
 					<ChildItems>
 						<Table name="Товары" id="9">
@@ -170,7 +174,7 @@
 							<SkipOnInput>false</SkipOnInput>
 							<Width>40</Width>
 							<HeightInTableRows>8</HeightInTableRows>
-							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<RowSelectionMode>Cell</RowSelectionMode>
 							<AutoInsertNewRow>true</AutoInsertNewRow>
 							<FileDragMode>AsFile</FileDragMode>
 							<DataPath>Объект.Товары</DataPath>
@@ -220,6 +224,7 @@
 									<DataPath>Объект.Товары.LineNumber</DataPath>
 									<EditMode>EnterOnInput</EditMode>
 									<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+									<AutoEditMode>true</AutoEditMode>
 									<ContextMenu name="ТоварыНомерСтрокиКонтекстноеМеню" id="31"/>
 									<ExtendedTooltip name="ТоварыНомерСтрокиExtendedTooltip" id="68"/>
 								</LabelField>
@@ -228,6 +233,7 @@
 									<DefaultItem>true</DefaultItem>
 									<EditMode>EnterOnInput</EditMode>
 									<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+									<AutoEditMode>true</AutoEditMode>
 									<Wrap>false</Wrap>
 									<ChoiceForm>Catalog.Товары.Form.ФормаСпискаСОстатками</ChoiceForm>
 									<BorderColor>style:BorderColor</BorderColor>
@@ -241,6 +247,7 @@
 									<DataPath>Объект.Товары.Цена</DataPath>
 									<EditMode>EnterOnInput</EditMode>
 									<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+									<AutoEditMode>true</AutoEditMode>
 									<Wrap>false</Wrap>
 									<ContextMenu name="ТоварыЦенаКонтекстноеМеню" id="33"/>
 									<ExtendedTooltip name="ТоварыЦенаExtendedTooltip" id="70"/>
@@ -252,6 +259,7 @@
 									<DataPath>Объект.Товары.Количество</DataPath>
 									<EditMode>EnterOnInput</EditMode>
 									<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+									<AutoEditMode>true</AutoEditMode>
 									<Wrap>false</Wrap>
 									<SpinButton>true</SpinButton>
 									<ContextMenu name="ТоварыКоличествоКонтекстноеМеню" id="34"/>
@@ -264,6 +272,7 @@
 									<DataPath>Объект.Товары.Сумма</DataPath>
 									<EditMode>EnterOnInput</EditMode>
 									<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+									<AutoEditMode>true</AutoEditMode>
 									<Wrap>false</Wrap>
 									<ContextMenu name="ТоварыСуммаКонтекстноеМеню" id="35"/>
 									<ExtendedTooltip name="ТоварыСуммаExtendedTooltip" id="72"/>
@@ -314,6 +323,8 @@
 							<v8:content>Прочее</v8:content>
 						</v8:item>
 					</Title>
+					<Group>Vertical</Group>
+					<ScrollOnCompress>false</ScrollOnCompress>
 					<ExtendedTooltip name="ПрочееExtendedTooltip" id="76"/>
 					<ChildItems>
 						<InputField name="ОбоснованиеОтгрузки" id="21">

@@ -1,7 +1,9 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>DontBlock</WindowOpeningMode>
 	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
 	<SaveDataInSettings>UseList</SaveDataInSettings>
+	<Group>Vertical</Group>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<ChildItems>
 			<Button name="Провести" id="16">
@@ -12,6 +14,7 @@
 				<TextColor>style:ButtonTextColor</TextColor>
 				<BackColor>style:ButtonBackColor</BackColor>
 				<BorderColor>style:BorderColor</BorderColor>
+				<ButtonImportance>Main</ButtonImportance>
 				<ExtendedTooltip name="ПровестиExtendedTooltip" id="34"/>
 			</Button>
 			<Button name="СохранитьПараметры" id="32">
@@ -74,6 +77,7 @@
 					<ChildItems>
 						<InputField name="ДатаНачала" id="12">
 							<DataPath>ДатаНачала</DataPath>
+							<MarkRequiredComplete>true</MarkRequiredComplete>
 							<Wrap>false</Wrap>
 							<AutoMarkIncomplete>true</AutoMarkIncomplete>
 							<BorderColor>style:BorderColor</BorderColor>
@@ -82,6 +86,7 @@
 						</InputField>
 						<InputField name="ДатаОкончания" id="14">
 							<DataPath>ДатаОкончания</DataPath>
+							<MarkRequiredComplete>true</MarkRequiredComplete>
 							<Wrap>false</Wrap>
 							<AutoMarkIncomplete>true</AutoMarkIncomplete>
 							<BorderColor>style:BorderColor</BorderColor>
@@ -156,6 +161,7 @@
 			</ToolTip>
 			<Group>Horizontal</Group>
 			<Behavior>Usual</Behavior>
+			<Representation>WeakSeparation</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="СпискиExtendedTooltip" id="43"/>
 			<ChildItems>
@@ -167,9 +173,11 @@
 					<ChangeRowSet>false</ChangeRowSet>
 					<ChangeRowOrder>false</ChangeRowOrder>
 					<Width>30</Width>
+					<RowSelectionMode>Cell</RowSelectionMode>
 					<Header>false</Header>
-					<HorizontalLines>false</HorizontalLines>
-					<VerticalLines>false</VerticalLines>
+					<HorizontalLinesBWA>false</HorizontalLinesBWA>
+					<VerticalLinesBWA>false</VerticalLinesBWA>
+					<UseAlternationRowColorBWA>false</UseAlternationRowColorBWA>
 					<FileDragMode>AsFile</FileDragMode>
 					<DataPath>Объект.СписокДокументов</DataPath>
 					<BorderColor>style:BorderColor</BorderColor>
@@ -243,9 +251,11 @@
 					<ChangeRowSet>false</ChangeRowSet>
 					<ChangeRowOrder>false</ChangeRowOrder>
 					<Width>30</Width>
+					<RowSelectionMode>Cell</RowSelectionMode>
 					<Header>false</Header>
-					<HorizontalLines>false</HorizontalLines>
-					<VerticalLines>false</VerticalLines>
+					<HorizontalLinesBWA>false</HorizontalLinesBWA>
+					<VerticalLinesBWA>false</VerticalLinesBWA>
+					<UseAlternationRowColorBWA>false</UseAlternationRowColorBWA>
 					<FileDragMode>AsFile</FileDragMode>
 					<DataPath>Объект.ВыбранныеДокументы</DataPath>
 					<BorderColor>style:BorderColor</BorderColor>
