@@ -419,6 +419,7 @@
 			<CommonModule>УведомленияСервер</CommonModule>
 			<CommonModule>ВходящийЗапросПоделитьсяКлиент</CommonModule>
 			<CommonModule>API_ОписанияТоваров</CommonModule>
+			<CommonModule>OTUS_001_Служебный</CommonModule>
 			<ExchangePlan>Мобильные</ExchangePlan>
 			<XDTOPackage>ОбменСМобильнымУстройством</XDTOPackage>
 			<WebService>MAExchange</WebService>
