@@ -140,6 +140,11 @@
 					<ContextMenu name="ВалютаКонтекстноеМеню" id="13"/>
 					<ExtendedTooltip name="ВалютаExtendedTooltip" id="22"/>
 				</LabelField>
+				<LabelField name="КомментарийЛогиста" id="48">
+					<DataPath>Список.КомментарийЛогиста</DataPath>
+					<ContextMenu name="КомментарийЛогистаКонтекстноеМеню" id="49"/>
+					<ExtendedTooltip name="КомментарийЛогистаРасширеннаяПодсказка" id="50"/>
+				</LabelField>
 			</ChildItems>
 		</Table>
 	</ChildItems>
