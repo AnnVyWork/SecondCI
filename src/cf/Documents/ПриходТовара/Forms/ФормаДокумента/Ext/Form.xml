@@ -1,5 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>DontBlock</WindowOpeningMode>
+	<Group>Vertical</Group>
 	<AutoTime>CurrentOrLast</AutoTime>
 	<UsePostingMode>Auto</UsePostingMode>
 	<RepostOnWrite>true</RepostOnWrite>
@@ -12,56 +14,121 @@
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
-		<InputField name="Номер" id="2">
-			<DataPath>Объект.Number</DataPath>
-			<SkipOnInput>true</SkipOnInput>
-			<FooterHorizontalAlign>Left</FooterHorizontalAlign>
-			<Wrap>false</Wrap>
-			<BorderColor>style:BorderColor</BorderColor>
-			<ContextMenu name="НомерКонтекстноеМеню" id="19"/>
-			<ExtendedTooltip name="НомерExtendedTooltip" id="39"/>
-		</InputField>
-		<InputField name="Дата" id="3">
-			<DataPath>Объект.Date</DataPath>
-			<FooterHorizontalAlign>Left</FooterHorizontalAlign>
-			<Wrap>false</Wrap>
-			<BorderColor>style:BorderColor</BorderColor>
-			<ContextMenu name="ДатаКонтекстноеМеню" id="20"/>
-			<ExtendedTooltip name="ДатаExtendedTooltip" id="40"/>
-		</InputField>
-		<InputField name="Организация" id="37">
-			<DataPath>Объект.Организация</DataPath>
-			<Wrap>false</Wrap>
-			<BorderColor>style:BorderColor</BorderColor>
-			<ContextMenu name="ОрганизацияКонтекстноеМеню" id="38"/>
-			<ExtendedTooltip name="ОрганизацияExtendedTooltip" id="41"/>
-			<Events>
-				<Event name="OnChange">ОрганизацияПриИзменении</Event>
-			</Events>
-		</InputField>
-		<InputField name="Склад" id="5">
-			<DataPath>Объект.Склад</DataPath>
-			<FooterHorizontalAlign>Left</FooterHorizontalAlign>
-			<Wrap>false</Wrap>
-			<BorderColor>style:BorderColor</BorderColor>
-			<ContextMenu name="СкладКонтекстноеМеню" id="21"/>
-			<ExtendedTooltip name="СкладExtendedTooltip" id="42"/>
-		</InputField>
-		<InputField name="Валюта" id="6">
-			<DataPath>Объект.Валюта</DataPath>
-			<FooterHorizontalAlign>Left</FooterHorizontalAlign>
-			<Wrap>false</Wrap>
-			<BorderColor>style:BorderColor</BorderColor>
-			<ContextMenu name="ВалютаКонтекстноеМеню" id="22"/>
-			<ExtendedTooltip name="ВалютаExtendedTooltip" id="43"/>
-		</InputField>
-		<InputField name="Поставщик" id="4">
-			<DataPath>Объект.Поставщик</DataPath>
-			<FooterHorizontalAlign>Left</FooterHorizontalAlign>
-			<Wrap>false</Wrap>
-			<ContextMenu name="ПоставщикКонтекстноеМеню" id="23"/>
-			<ExtendedTooltip name="ПоставщикExtendedTooltip" id="44"/>
-		</InputField>
+		<UsualGroup name="ГруппаШапка" id="90">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа шапка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа шапка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаШапкаРасширеннаяПодсказка" id="91"/>
+			<ChildItems>
+				<UsualGroup name="ШапкаЛево" id="92">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Шапка лево</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Шапка лево</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ШапкаЛевоРасширеннаяПодсказка" id="93"/>
+					<ChildItems>
+						<InputField name="Номер" id="2">
+							<DataPath>Объект.Number</DataPath>
+							<SkipOnInput>true</SkipOnInput>
+							<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+							<Wrap>false</Wrap>
+							<BorderColor>style:BorderColor</BorderColor>
+							<ContextMenu name="НомерКонтекстноеМеню" id="19"/>
+							<ExtendedTooltip name="НомерExtendedTooltip" id="39"/>
+						</InputField>
+						<InputField name="Дата" id="3">
+							<DataPath>Объект.Date</DataPath>
+							<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+							<Wrap>false</Wrap>
+							<BorderColor>style:BorderColor</BorderColor>
+							<ContextMenu name="ДатаКонтекстноеМеню" id="20"/>
+							<ExtendedTooltip name="ДатаExtendedTooltip" id="40"/>
+						</InputField>
+						<InputField name="Организация" id="37">
+							<DataPath>Объект.Организация</DataPath>
+							<Wrap>false</Wrap>
+							<BorderColor>style:BorderColor</BorderColor>
+							<ContextMenu name="ОрганизацияКонтекстноеМеню" id="38"/>
+							<ExtendedTooltip name="ОрганизацияExtendedTooltip" id="41"/>
+							<Events>
+								<Event name="OnChange">ОрганизацияПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="Склад" id="5">
+							<DataPath>Объект.Склад</DataPath>
+							<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+							<Wrap>false</Wrap>
+							<BorderColor>style:BorderColor</BorderColor>
+							<ContextMenu name="СкладКонтекстноеМеню" id="21"/>
+							<ExtendedTooltip name="СкладExtendedTooltip" id="42"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ШапкаПраво" id="94">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Шапка право</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Шапка право</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ШапкаПравоРасширеннаяПодсказка" id="95"/>
+					<ChildItems>
+						<InputField name="Поставщик" id="4">
+							<DataPath>Объект.Поставщик</DataPath>
+							<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+							<Wrap>false</Wrap>
+							<ContextMenu name="ПоставщикКонтекстноеМеню" id="23"/>
+							<ExtendedTooltip name="ПоставщикExtendedTooltip" id="44"/>
+						</InputField>
+						<InputField name="Валюта" id="6">
+							<DataPath>Объект.Валюта</DataPath>
+							<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+							<Wrap>false</Wrap>
+							<BorderColor>style:BorderColor</BorderColor>
+							<ContextMenu name="ВалютаКонтекстноеМеню" id="22"/>
+							<ExtendedTooltip name="ВалютаExtendedTooltip" id="43"/>
+						</InputField>
+						<InputField name="КомментарийЛогиста" id="96">
+							<DataPath>Объект.КомментарийЛогиста</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="КомментарийЛогистаКонтекстноеМеню" id="97"/>
+							<ExtendedTooltip name="КомментарийЛогистаРасширеннаяПодсказка" id="98"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
 		<UsualGroup name="ТоварыГруппа" id="66">
 			<Title>
 				<v8:item>
@@ -77,6 +144,7 @@
 			</ToolTip>
 			<Group>Vertical</Group>
 			<Behavior>Usual</Behavior>
+			<Representation>WeakSeparation</Representation>
 			<ExtendedTooltip name="ТоварыГруппаРасширеннаяПодсказка" id="67"/>
 			<ChildItems>
 				<Table name="Товары" id="8">
@@ -84,7 +152,7 @@
 					<SkipOnInput>false</SkipOnInput>
 					<Width>65</Width>
 					<HeightInTableRows>5</HeightInTableRows>
-					<UseAlternationRowColor>true</UseAlternationRowColor>
+					<RowSelectionMode>Cell</RowSelectionMode>
 					<AutoInsertNewRow>true</AutoInsertNewRow>
 					<FileDragMode>AsFile</FileDragMode>
 					<DataPath>Объект.Товары</DataPath>
@@ -128,6 +196,7 @@
 							</Title>
 							<EditMode>EnterOnInput</EditMode>
 							<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+							<AutoEditMode>true</AutoEditMode>
 							<ContextMenu name="ТоварыНомерСтрокиКонтекстноеМеню" id="26"/>
 							<ExtendedTooltip name="ТоварыНомерСтрокиExtendedTooltip" id="48"/>
 						</LabelField>
@@ -135,6 +204,7 @@
 							<DataPath>Объект.Товары.Товар</DataPath>
 							<EditMode>EnterOnInput</EditMode>
 							<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+							<AutoEditMode>true</AutoEditMode>
 							<Wrap>false</Wrap>
 							<QuickChoice>false</QuickChoice>
 							<BorderColor>style:BorderColor</BorderColor>
@@ -148,6 +218,7 @@
 							<DataPath>Объект.Товары.Товар.Артикул</DataPath>
 							<EditMode>EnterOnInput</EditMode>
 							<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+							<AutoEditMode>true</AutoEditMode>
 							<Wrap>false</Wrap>
 							<ContextMenu name="ТоварыАртикулКонтекстноеМеню" id="28"/>
 							<ExtendedTooltip name="ТоварыАртикулExtendedTooltip" id="50"/>
@@ -156,6 +227,7 @@
 							<DataPath>Объект.Товары.Цена</DataPath>
 							<EditMode>EnterOnInput</EditMode>
 							<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+							<AutoEditMode>true</AutoEditMode>
 							<Wrap>false</Wrap>
 							<ContextMenu name="ТоварыЦенаКонтекстноеМеню" id="29"/>
 							<ExtendedTooltip name="ТоварыЦенаExtendedTooltip" id="51"/>
@@ -167,6 +239,7 @@
 							<DataPath>Объект.Товары.Количество</DataPath>
 							<EditMode>EnterOnInput</EditMode>
 							<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+							<AutoEditMode>true</AutoEditMode>
 							<Wrap>false</Wrap>
 							<SpinButton>true</SpinButton>
 							<ContextMenu name="ТоварыКоличествоКонтекстноеМеню" id="30"/>
@@ -178,6 +251,7 @@
 						<InputField name="ТоварыСумма" id="14" DisplayImportance="High">
 							<DataPath>Объект.Товары.Сумма</DataPath>
 							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
 							<Wrap>false</Wrap>
 							<ContextMenu name="ТоварыСуммаКонтекстноеМеню" id="31"/>
 							<ExtendedTooltip name="ТоварыСуммаExtendedTooltip" id="53"/>
