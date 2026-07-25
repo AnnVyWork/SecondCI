@@ -14,56 +14,121 @@
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
-		<InputField name="Номер" id="2">
-			<DataPath>Объект.Number</DataPath>
-			<SkipOnInput>true</SkipOnInput>
-			<FooterHorizontalAlign>Left</FooterHorizontalAlign>
-			<Wrap>false</Wrap>
-			<BorderColor>style:BorderColor</BorderColor>
-			<ContextMenu name="НомерКонтекстноеМеню" id="19"/>
-			<ExtendedTooltip name="НомерExtendedTooltip" id="39"/>
-		</InputField>
-		<InputField name="Дата" id="3">
-			<DataPath>Объект.Date</DataPath>
-			<FooterHorizontalAlign>Left</FooterHorizontalAlign>
-			<Wrap>false</Wrap>
-			<BorderColor>style:BorderColor</BorderColor>
-			<ContextMenu name="ДатаКонтекстноеМеню" id="20"/>
-			<ExtendedTooltip name="ДатаExtendedTooltip" id="40"/>
-		</InputField>
-		<InputField name="Организация" id="37">
-			<DataPath>Объект.Организация</DataPath>
-			<Wrap>false</Wrap>
-			<BorderColor>style:BorderColor</BorderColor>
-			<ContextMenu name="ОрганизацияКонтекстноеМеню" id="38"/>
-			<ExtendedTooltip name="ОрганизацияExtendedTooltip" id="41"/>
-			<Events>
-				<Event name="OnChange">ОрганизацияПриИзменении</Event>
-			</Events>
-		</InputField>
-		<InputField name="Склад" id="5">
-			<DataPath>Объект.Склад</DataPath>
-			<FooterHorizontalAlign>Left</FooterHorizontalAlign>
-			<Wrap>false</Wrap>
-			<BorderColor>style:BorderColor</BorderColor>
-			<ContextMenu name="СкладКонтекстноеМеню" id="21"/>
-			<ExtendedTooltip name="СкладExtendedTooltip" id="42"/>
-		</InputField>
-		<InputField name="Валюта" id="6">
-			<DataPath>Объект.Валюта</DataPath>
-			<FooterHorizontalAlign>Left</FooterHorizontalAlign>
-			<Wrap>false</Wrap>
-			<BorderColor>style:BorderColor</BorderColor>
-			<ContextMenu name="ВалютаКонтекстноеМеню" id="22"/>
-			<ExtendedTooltip name="ВалютаExtendedTooltip" id="43"/>
-		</InputField>
-		<InputField name="Поставщик" id="4">
-			<DataPath>Объект.Поставщик</DataPath>
-			<FooterHorizontalAlign>Left</FooterHorizontalAlign>
-			<Wrap>false</Wrap>
-			<ContextMenu name="ПоставщикКонтекстноеМеню" id="23"/>
-			<ExtendedTooltip name="ПоставщикExtendedTooltip" id="44"/>
-		</InputField>
+		<UsualGroup name="ГруппаШапка" id="90">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа шапка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа шапка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаШапкаРасширеннаяПодсказка" id="91"/>
+			<ChildItems>
+				<UsualGroup name="ШапкаЛево" id="92">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Шапка лево</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Шапка лево</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ШапкаЛевоРасширеннаяПодсказка" id="93"/>
+					<ChildItems>
+						<InputField name="Номер" id="2">
+							<DataPath>Объект.Number</DataPath>
+							<SkipOnInput>true</SkipOnInput>
+							<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+							<Wrap>false</Wrap>
+							<BorderColor>style:BorderColor</BorderColor>
+							<ContextMenu name="НомерКонтекстноеМеню" id="19"/>
+							<ExtendedTooltip name="НомерExtendedTooltip" id="39"/>
+						</InputField>
+						<InputField name="Дата" id="3">
+							<DataPath>Объект.Date</DataPath>
+							<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+							<Wrap>false</Wrap>
+							<BorderColor>style:BorderColor</BorderColor>
+							<ContextMenu name="ДатаКонтекстноеМеню" id="20"/>
+							<ExtendedTooltip name="ДатаExtendedTooltip" id="40"/>
+						</InputField>
+						<InputField name="Организация" id="37">
+							<DataPath>Объект.Организация</DataPath>
+							<Wrap>false</Wrap>
+							<BorderColor>style:BorderColor</BorderColor>
+							<ContextMenu name="ОрганизацияКонтекстноеМеню" id="38"/>
+							<ExtendedTooltip name="ОрганизацияExtendedTooltip" id="41"/>
+							<Events>
+								<Event name="OnChange">ОрганизацияПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="Склад" id="5">
+							<DataPath>Объект.Склад</DataPath>
+							<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+							<Wrap>false</Wrap>
+							<BorderColor>style:BorderColor</BorderColor>
+							<ContextMenu name="СкладКонтекстноеМеню" id="21"/>
+							<ExtendedTooltip name="СкладExtendedTooltip" id="42"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ШапкаПраво" id="94">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Шапка право</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Шапка право</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ШапкаПравоРасширеннаяПодсказка" id="95"/>
+					<ChildItems>
+						<InputField name="Поставщик" id="4">
+							<DataPath>Объект.Поставщик</DataPath>
+							<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+							<Wrap>false</Wrap>
+							<ContextMenu name="ПоставщикКонтекстноеМеню" id="23"/>
+							<ExtendedTooltip name="ПоставщикExtendedTooltip" id="44"/>
+						</InputField>
+						<InputField name="Валюта" id="6">
+							<DataPath>Объект.Валюта</DataPath>
+							<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+							<Wrap>false</Wrap>
+							<BorderColor>style:BorderColor</BorderColor>
+							<ContextMenu name="ВалютаКонтекстноеМеню" id="22"/>
+							<ExtendedTooltip name="ВалютаExtendedTooltip" id="43"/>
+						</InputField>
+						<InputField name="КомментарийЛогиста" id="96">
+							<DataPath>Объект.КомментарийЛогиста</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="КомментарийЛогистаКонтекстноеМеню" id="97"/>
+							<ExtendedTooltip name="КомментарийЛогистаРасширеннаяПодсказка" id="98"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
 		<UsualGroup name="ТоварыГруппа" id="66">
 			<Title>
 				<v8:item>
